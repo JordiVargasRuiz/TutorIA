@@ -1,0 +1,30 @@
+Reporte de Tutoría: Proyecto TutorAI
+
+Introducción:
+
+TutorAI esta planeada como una plataforma de apoyo educativo que integra inteligencia artificial para mejorar la experiencia de aprendizaje. Actualmente, el sistema cuenta con funcionalidades clave como un chatbot basado en modelos de Google Gemini, un sistema de autenticación con login y registro de usuarios (signup), y se está evaluando la incorporación de nuevas herramientas como generación de texto, resúmenes automáticos y exámenes personalizados para la V2.
+
+Estado Actual del Proyecto:
+	Funcionalidades Implementadas
+
+	Chatbot con IA (Gemini):
+		Capaz de responder preguntas, generar texto y ofrecer asistencia educativa.
+		Integrado en la plataforma con una interfaz interactiva.
+
+	Sistema de Autenticación:
+		Registro y login de usuarios para acceso personalizado.
+
+Funcionalidades en Desarrollo: V2
+	Generador de Texto y Resúmenes:
+		Se planea integrar una herramienta que permita a los usuarios generar contenido académico y resúmenes automáticos basados en IA/Localmente
+
+
+Generación de Exámenes Personalizados: V2
+	Se busca desarrollar un módulo que permita la creación automática de cuestionarios basados en textos o temarios proporcionados por el usuario.
+	Exploración de opciones de almacenamiento y procesamiento eficiente de preguntas y respuestas.
+
+Retos y Consideraciones
+	Costo de Implementación: Evaluar opciones de modelos de IA que permitan un equilibrio entre eficiencia y costos operativos.
+
+
+Interfaz de Usuario: Diseño intuitivo para las nuevas funciones.
