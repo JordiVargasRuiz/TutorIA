@@ -112,7 +112,7 @@ const LoginPage = () => {
             <hr className="my-4" />
             <div className="text-center">
               <p>¿Aún no tienes cuenta?</p>
-              <a href="/signup" className="btn btn-success w-100" disabled={loading}>
+              <a href="TutoIA/signup" className="btn btn-success w-100" disabled={loading}>
                 Regístrate
               </a>
             </div>
