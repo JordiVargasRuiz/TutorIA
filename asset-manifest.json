@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "/TutorIA/static/css/main.19c56b44.css",
-    "main.js": "/TutorIA/static/js/main.12f5aaa9.js",
+    "main.js": "/TutorIA/static/js/main.57095fa2.js",
     "static/js/239.a4c4de81.chunk.js": "/TutorIA/static/js/239.a4c4de81.chunk.js",
     "static/js/977.f261bc2f.chunk.js": "/TutorIA/static/js/977.f261bc2f.chunk.js",
     "static/js/732.355bd96b.chunk.js": "/TutorIA/static/js/732.355bd96b.chunk.js",
     "static/js/453.0aade638.chunk.js": "/TutorIA/static/js/453.0aade638.chunk.js",
     "static/media/slide1.jpg": "/TutorIA/static/media/slide1.d9b669047c446714f977.jpg",
+    "static/media/bi1.jpg": "/TutorIA/static/media/bi1.5e98b026fff3bf5cfdc4.jpg",
     "static/media/bootstrap-icons.woff?": "/TutorIA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/actualizaciones.jpg": "/TutorIA/static/media/actualizaciones.4ffb77042b22f3aa7479.jpg",
     "static/media/generos.jpg": "/TutorIA/static/media/generos.6a9ece432ea1cd0cca35.jpg",
     "static/media/vision.jpg": "/TutorIA/static/media/vision.7b173b4ead271b41dcd3.jpg",
     "static/media/mision.jpg": "/TutorIA/static/media/mision.dc329d3499c47c7f9fe0.jpg",
     "static/media/global.jpg": "/TutorIA/static/media/global.b7c1547fe32a9f6e482f.jpg",
+    "static/media/bi3.jpg": "/TutorIA/static/media/bi3.9e7c881eec4423ade470.jpg",
+    "static/media/bi2.jpg": "/TutorIA/static/media/bi2.bc7c234d9b0bc25864ed.jpg",
     "static/media/slide3.jpg": "/TutorIA/static/media/slide3.721032b1647fc8b26951.jpg",
     "static/media/bootstrap-icons.woff2?": "/TutorIA/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/valor.jpg": "/TutorIA/static/media/valor.6245e748913db50c362e.jpg",
@@ -28,13 +31,13 @@
     "static/media/ejem.jpg": "/TutorIA/static/media/ejem.82493477673c716c7d0e.jpg",
     "index.html": "/TutorIA/index.html",
     "main.19c56b44.css.map": "/TutorIA/static/css/main.19c56b44.css.map",
-    "main.12f5aaa9.js.map": "/TutorIA/static/js/main.12f5aaa9.js.map",
+    "main.57095fa2.js.map": "/TutorIA/static/js/main.57095fa2.js.map",
     "239.a4c4de81.chunk.js.map": "/TutorIA/static/js/239.a4c4de81.chunk.js.map",
     "732.355bd96b.chunk.js.map": "/TutorIA/static/js/732.355bd96b.chunk.js.map",
     "453.0aade638.chunk.js.map": "/TutorIA/static/js/453.0aade638.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19c56b44.css",
-    "static/js/main.12f5aaa9.js"
+    "static/js/main.57095fa2.js"
   ]
 }
