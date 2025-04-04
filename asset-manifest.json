@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TutorIA/static/css/main.19c56b44.css",
-    "main.js": "/TutorIA/static/js/main.57095fa2.js",
+    "main.css": "/TutorIA/static/css/main.5c83ba0f.css",
+    "main.js": "/TutorIA/static/js/main.23d0fa38.js",
     "static/js/239.a4c4de81.chunk.js": "/TutorIA/static/js/239.a4c4de81.chunk.js",
     "static/js/977.f261bc2f.chunk.js": "/TutorIA/static/js/977.f261bc2f.chunk.js",
     "static/js/732.355bd96b.chunk.js": "/TutorIA/static/js/732.355bd96b.chunk.js",
@@ -11,6 +11,7 @@
     "static/media/bootstrap-icons.woff?": "/TutorIA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/actualizaciones.jpg": "/TutorIA/static/media/actualizaciones.4ffb77042b22f3aa7479.jpg",
     "static/media/generos.jpg": "/TutorIA/static/media/generos.6a9ece432ea1cd0cca35.jpg",
+    "static/media/revision.jpg": "/TutorIA/static/media/revision.5c7d94ad4be352a50e9b.jpg",
     "static/media/vision.jpg": "/TutorIA/static/media/vision.7b173b4ead271b41dcd3.jpg",
     "static/media/mision.jpg": "/TutorIA/static/media/mision.dc329d3499c47c7f9fe0.jpg",
     "static/media/global.jpg": "/TutorIA/static/media/global.b7c1547fe32a9f6e482f.jpg",
@@ -21,6 +22,7 @@
     "static/media/valor.jpg": "/TutorIA/static/media/valor.6245e748913db50c362e.jpg",
     "static/media/aprendizaje.jpg": "/TutorIA/static/media/aprendizaje.98f1ef140733f54f1f9d.jpg",
     "static/media/slide2.jpg": "/TutorIA/static/media/slide2.656500cad8c593176b18.jpg",
+    "static/media/generacion.jpg": "/TutorIA/static/media/generacion.b6af3f463a69189d907a.jpg",
     "static/media/fondo_login.jpg": "/TutorIA/static/media/fondo_login.075c0d525775c9dd631a.jpg",
     "static/media/fondo_nosotros.jpg": "/TutorIA/static/media/fondo_nosotros.966c8eacbc071fee9cdd.jpg",
     "static/media/fondo_servicios.jpg": "/TutorIA/static/media/fondo_servicios.378e2547746c7a285f86.jpg",
@@ -30,14 +32,14 @@
     "static/media/ejem3.jpg": "/TutorIA/static/media/ejem3.1fd94ddc8951195eaaad.jpg",
     "static/media/ejem.jpg": "/TutorIA/static/media/ejem.82493477673c716c7d0e.jpg",
     "index.html": "/TutorIA/index.html",
-    "main.19c56b44.css.map": "/TutorIA/static/css/main.19c56b44.css.map",
-    "main.57095fa2.js.map": "/TutorIA/static/js/main.57095fa2.js.map",
+    "main.5c83ba0f.css.map": "/TutorIA/static/css/main.5c83ba0f.css.map",
+    "main.23d0fa38.js.map": "/TutorIA/static/js/main.23d0fa38.js.map",
     "239.a4c4de81.chunk.js.map": "/TutorIA/static/js/239.a4c4de81.chunk.js.map",
     "732.355bd96b.chunk.js.map": "/TutorIA/static/js/732.355bd96b.chunk.js.map",
     "453.0aade638.chunk.js.map": "/TutorIA/static/js/453.0aade638.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19c56b44.css",
-    "static/js/main.57095fa2.js"
+    "static/css/main.5c83ba0f.css",
+    "static/js/main.23d0fa38.js"
   ]
 }
