@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TutorIA/static/css/main.5c83ba0f.css",
-    "main.js": "/TutorIA/static/js/main.a2958617.js",
+    "main.js": "/TutorIA/static/js/main.526d1c49.js",
     "static/js/239.a4c4de81.chunk.js": "/TutorIA/static/js/239.a4c4de81.chunk.js",
     "static/js/977.f261bc2f.chunk.js": "/TutorIA/static/js/977.f261bc2f.chunk.js",
     "static/js/732.355bd96b.chunk.js": "/TutorIA/static/js/732.355bd96b.chunk.js",
@@ -33,13 +33,13 @@
     "static/media/ejem.jpg": "/TutorIA/static/media/ejem.82493477673c716c7d0e.jpg",
     "index.html": "/TutorIA/index.html",
     "main.5c83ba0f.css.map": "/TutorIA/static/css/main.5c83ba0f.css.map",
-    "main.a2958617.js.map": "/TutorIA/static/js/main.a2958617.js.map",
+    "main.526d1c49.js.map": "/TutorIA/static/js/main.526d1c49.js.map",
     "239.a4c4de81.chunk.js.map": "/TutorIA/static/js/239.a4c4de81.chunk.js.map",
     "732.355bd96b.chunk.js.map": "/TutorIA/static/js/732.355bd96b.chunk.js.map",
     "453.0aade638.chunk.js.map": "/TutorIA/static/js/453.0aade638.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c83ba0f.css",
-    "static/js/main.a2958617.js"
+    "static/js/main.526d1c49.js"
   ]
 }
