@@ -27,7 +27,6 @@ Genera ensayos completos de forma automatizada a partir de un tema:
 Consulta libros agregados por los usuarios y organiza tu colección:
 - Búsqueda por título.
 - Visualización y administración intuitiva.
-- Añadir nuevos libros con facilidad.
 ![image](https://github.com/user-attachments/assets/f1535902-9f24-4e97-8b1f-dd9728f2b2da)
 
 ### 🧠 Generador de Quizzes
