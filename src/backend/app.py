@@ -21,7 +21,7 @@ def preguntar():
         if not pregunta:
             return jsonify({"error": "No se recibió una pregunta"}), 400
 
-        modelo = genai.GenerativeModel("gemini-1.5-pro-latest")
+        modelo = genai.GenerativeModel("gemini-2.0-flash")
         respuesta = modelo.generate_content(pregunta)
 
         return jsonify({"respuesta": respuesta.text})

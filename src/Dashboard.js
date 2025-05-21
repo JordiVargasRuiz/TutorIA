@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link,  useNavigate } from 'react-router-dom';
-import { FaImages, FaPhotoVideo, FaTools, FaBullseye, FaEye, FaHeart, FaUsers } from 'react-icons/fa';
+import { Link as ScrollLink } from 'react-scroll'; 
+import {FaBookOpen, FaBolt, FaLightbulb, FaClock, FaPlayCircle, FaCheckCircle, FaImages, FaPhotoVideo, FaTools, FaBullseye, FaEye, FaHeart, FaUsers, FaBook, FaUserGraduate, FaStackOverflow, FaSync, FaGlobe, FaPenAlt, FaBrain, FaEdit, FaRegClock, FaClipboardList } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { FaRegClipboard } from 'react-icons/fa';
 import logo from './img/logo.png';
@@ -11,6 +12,12 @@ import logo4 from './img/ejem3.jpg';
 import img1 from './img/slide1.jpg';
 import img2 from './img/slide2.jpg';
 import img3 from './img/slide3.jpg';
+import global from './img/global.jpg';
+import generacionRapidaImg from './img/generacion.jpg';
+import revisionImg from './img/revision.jpg';
+import aprendizaje from './img/aprendizaje.jpg';
+import generos from './img/generos.jpg';
+import actualizaciones from './img/actualizaciones.jpg';
 import visionImg from './img/vision.jpg';
 import misionImg from './img/mision.jpg';
 import valoresImg from './img/valor.jpg';
@@ -24,6 +31,7 @@ function Dashboard() {
   const [expandedService, setExpandedService] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  window.scrollTo(0, 0);
 
   const toggleService = (index) => {
     setExpandedService(expandedService === index ? null : index);
@@ -88,6 +96,7 @@ function Dashboard() {
                   Inicio
                 </Link>
               </li>
+
               <li
                 className="nav-item dropdown"
                 onMouseEnter={() => setShowDropdown(true)}
@@ -96,16 +105,28 @@ function Dashboard() {
                 <button className="btn dropdown-toggle" style={{backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none'}} type="button">Opciones</button>
                 {showDropdown && (
                   <div className="dropdown-menu show">
-                    <Link to="/perfil" className="dropdown-item">Mi perfil</Link>
+                    <Link to="/tasks" className="dropdown-item">Mis tareas</Link>
                     <button onClick={handleLogout} className="dropdown-item">Salir</button>
                   </div>
                 )}
               </li>
 
               <li className="nav-item">
-                <a href="#nosotros" className="btn" style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none' }}>
-                  Nosotros
-                </a>
+                  <Link to="/cita" className="btn" style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none', cursor: 'pointer' }}>
+                    Formato APA
+                  </Link>
+              </li>
+
+              <li className="nav-item">
+                  <ScrollLink to="nosotros" smooth={true} duration={500} className="btn" style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none', cursor: 'pointer' }}>
+                    Nosotros
+                  </ScrollLink>
+              </li>
+
+              <li className="nav-item">
+                  <ScrollLink to="contacto" smooth={true} duration={500} className="btn" style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none', cursor: 'pointer' }}>
+                    Contacto
+                  </ScrollLink>
               </li>
             </ul>
           </div>
@@ -134,6 +155,223 @@ function Dashboard() {
           <span className="visually-hidden">Siguiente</span>
         </button>
       </div>
+
+{/* Sección Biblioteca TutorIA */}
+<section
+  id="biblioteca"
+  className="py-5 text-center"
+  style={{
+    padding: '50px 15px',
+    backgroundImage: `url(${nosotrosBg})`, 
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+  <div className="container" style={{ background: 'rgba(255, 255, 255, 0.85)', padding: '30px', borderRadius: '10px' }}>
+    <motion.h2 className="mb-4" style={{ fontSize: '32px', fontWeight: 'bold', color: '#001F3D' }} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+      <FaBook className="me-2" color="#001F3D" /> Biblioteca TutorIA
+    </motion.h2>
+    <motion.p style={{ fontSize: '18px', maxWidth: '800px', margin: '0 auto', color: '#333' }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+      Descubre un mundo de conocimiento a tu alcance. En nuestra biblioteca, encontrarás libros electrónicos de libre acceso para ampliar tus horizontes.
+    </motion.p>
+    {/* Botón para redirigir */}
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+      <a href="#/Inicio" className="btn btn-primary mt-4" style={{ fontSize: '18px', padding: '10px 20px' }}>
+        Explorar Biblioteca
+      </a>
+    </motion.div>
+    <div className="row mt-4">
+      {[{ 
+          title: 'Acceso Global a diferentes libros', 
+          icon: <FaGlobe color="#ff6f61" />, 
+          text: 'Consulta libros desde cualquier lugar y en cualquier momento, con un acceso global y sencillo.',
+          image: global// Aquí coloca la URL de la imagen
+        },
+        { 
+          title: 'Aprendizaje Personalizado', 
+          icon: <FaUserGraduate color="#001F3D" />, 
+          text: 'Nuestros recursos están diseñados para adaptarse a tus intereses y necesidades de aprendizaje.',
+          image: aprendizaje // Aquí coloca la URL de la imagen
+        },
+        { 
+          title: 'Variedad de Géneros', 
+          icon: <FaStackOverflow color="#28a745" />, 
+          text: 'Explora una amplia gama de géneros literarios, desde literatura clásica hasta libros de estudio especializados.',
+          image: generos // Aquí coloca la URL de la imagen
+        },
+        { 
+          title: 'Actualizaciones Constantes', 
+          icon: <FaSync color="#ffcc00" />, 
+          text: 'Mantén tu conocimiento actualizado con los nuevos libros y recursos que se agregan regularmente.',
+          image: actualizaciones // Aquí coloca la URL de la imagen
+        }
+      ].map((item, index) => (
+        <motion.div key={index} className="col-md-3" whileHover={{ scale: 1.05 }}>
+          <div className="card shadow-sm p-3">
+            <h4 className="mb-3" style={{ color: '#001F3D' }}>
+              {item.icon} {item.title}
+            </h4>
+            <p style={{ color: '#333' }}>{item.text}</p>
+            <div className="mt-3">
+              {/* Imagen de la tarjeta (debajo del texto) */}
+              <img 
+                src={item.image} 
+                alt={item.title} 
+                className="card-img-bottom" 
+                style={{ height: '150px', objectFit: 'cover', borderRadius: '8px' }} 
+              />
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section
+  id="generador-resumenes"
+  className="py-5"
+  style={{
+    backgroundImage: `url(${serviciosBg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor: '#1c1c2b', // color fallback
+  }}
+>
+  <motion.div
+    className="container text-white"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    <motion.h2
+      className="text-center mb-4"
+      style={{ fontSize: '36px', fontWeight: 'bold' }}
+      initial={{ y: -40 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <FaBookOpen style={{ fontSize: '32px', marginRight: '12px' }} />
+      Generador de Resúmenes Inteligente
+    </motion.h2>
+
+    <motion.p
+      className="text-center mb-5"
+      style={{ fontSize: '18px', lineHeight: '1.7' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, delay: 0.3 }}
+    >
+      Transforma textos largos en conocimiento útil en segundos. Ideal para estudiantes, investigadores y mentes curiosas.
+    </motion.p>
+
+    <div className="d-flex justify-content-center mb-5">
+      <motion.a
+        href="#/resumen"
+        className="btn btn-primary mt-2"
+        style={{
+          fontSize: '18px',
+          padding: '12px 30px',
+          borderRadius: '10px',
+          transition: 'all 0.3s ease-in-out',
+        }}
+        whileHover={{ scale: 1.08 }}
+      >
+        Probar Generador de resumenes
+      </motion.a>
+    </div>
+
+    <div className="row text-center">
+      {[
+        {
+          icon: <FaBolt />,
+          title: 'Resúmenes Rápidos',
+          desc: 'Genera un resumen en segundos sin comprometer lo esencial.',
+          bg: '#2C3E50',
+        },
+        {
+          icon: <FaLightbulb />,
+          title: 'Ideas Principales',
+          desc: 'Extrae automáticamente las 5 ideas clave de cualquier texto.',
+          bg: '#34495E',
+        },
+        {
+          icon: <FaClock />,
+          title: 'Ahorro de Tiempo',
+          desc: 'Evita leer páginas enteras, obtén solo lo que importa.',
+          bg: '#3498DB',
+        },
+        {
+          icon: <FaBookOpen />,
+          title: 'Ideal para Estudios',
+          desc: 'Perfecto para tareas, investigaciones y repasos rápidos.',
+          bg: '#1ABC9C',
+        },
+      ].map((card, i) => (
+        <motion.div
+          key={i}
+          className="col-12 col-md-3 mb-4"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 * i }}
+        >
+          <div
+            className="card h-100 shadow-lg"
+            style={{
+              backgroundColor: card.bg,
+              color: '#fff',
+              borderRadius: '20px',
+              transition: 'transform 0.3s ease',
+            }}
+            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.03)')}
+            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+          >
+            <div className="card-body p-4">
+              <div style={{ fontSize: '28px', marginBottom: '12px' }}>{card.icon}</div>
+              <h5 className="card-title">{card.title}</h5>
+              <p className="card-text">{card.desc}</p>
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Sección de testimonios */}
+    <motion.div
+      className="mt-5 pt-4 border-top"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, delay: 0.5 }}
+    >
+      <h4 className="text-center mb-4" style={{ fontWeight: 'bold' }}>
+        Lo que dicen nuestros usuarios
+      </h4>
+      <div className="row text-white">
+        <div className="col-md-4 mb-3">
+          <blockquote className="blockquote" style={{ fontStyle: 'italic' }}>
+            “Gracias a este generador pude resumir mi tesis en minutos. ¡Una herramienta increíble!”
+          </blockquote>
+          <footer className="blockquote-footer text-white-50">Laura G., Estudiante de Psicología</footer>
+        </div>
+        <div className="col-md-4 mb-3">
+          <blockquote className="blockquote" style={{ fontStyle: 'italic' }}>
+            “Uso esta herramienta antes de cada reunión para digerir informes largos rápidamente.”
+          </blockquote>
+          <footer className="blockquote-footer text-white-50">Marco R., Gerente de Proyectos</footer>
+        </div>
+        <div className="col-md-4 mb-3">
+          <blockquote className="blockquote" style={{ fontStyle: 'italic' }}>
+            “Excelente para preparar clases. Me ahorra horas de lectura semanal.”
+          </blockquote>
+          <footer className="blockquote-footer text-white-50">Dra. Irene S., Profesora Universitaria</footer>
+        </div>
+      </div>
+    </motion.div>
+  </motion.div>
+</section>
+
 
       {/* Sección Nosotros */}
       <section
@@ -171,7 +409,196 @@ function Dashboard() {
       </section>
 
 
+<section
+  id="generar-ensayo"
+  className="py-5"
+  style={{
+    backgroundImage: `url(${serviciosBg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+  <div className="container">
+    <motion.h2
+      className="text-center mb-5"
+      style={{ fontSize: '32px', fontWeight: 'bold', color: '#ffffff' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <FaPenAlt style={{ fontSize: '30px', marginRight: '10px' }} />
+      Generación de Ensayos
+    </motion.h2>
 
+    <motion.p
+      className="text-center mb-1"
+      style={{ fontSize: '18px', color: '#ffffff', lineHeight: '1.6' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.2 }}
+    >
+      Nuestro sistema de generación de ensayos te ofrece una solución rápida y eficiente para crear contenido académico. Solo necesitas proporcionar los parámetros básicos y nuestra herramienta generará un ensayo estructurado, con argumentos claros y coherentes, optimizado para tus necesidades educativas.
+    </motion.p>
+
+{/* Botón para redirigir */}
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center', 
+    height: '100px',
+  }}
+>
+  <a
+    href="#/generador"
+    className="btn btn-primary mt-4"
+    style={{ fontSize: '18px', padding: '10px 20px' }}
+  >
+    Generación de Ensayos
+  </a>
+</motion.div>
+    <div className="row align-items-center justify-content-center">
+      {/* Primer Card */}
+      <motion.div
+        className="col-12 col-md-3 mb-4"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <div className="card shadow-lg" style={{ backgroundColor: '#ff6f61', color: 'white', borderRadius: '20px' }}>
+          <div className="card-body text-center p-4">
+            <FaBrain style={{ fontSize: '27px' }} />
+            <h4 className="mt-3">Generación Rápida</h4>
+            <p>Obtén un ensayo completo en minutos con solo unos pocos detalles.</p>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Tercer Card */}
+      <motion.div
+        className="col-12 col-md-3 mb-4"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
+        <div className="card shadow-lg" style={{ backgroundColor: '#343a40', color: 'white', borderRadius: '20px' }}>
+          <div className="card-body text-center p-4">
+            <FaClipboardList style={{ fontSize: '27px' }} />
+            <h4 className="mt-3">Formato Estandarizado</h4>
+            <p>El ensayo generado sigue las normativas estándar de redacción académica.</p>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Cuarto Card */}
+      <motion.div
+        className="col-12 col-md-3 mb-4"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+      >
+        <div className="card shadow-lg" style={{ backgroundColor: '#17a2b8', color: 'white', borderRadius: '20px' }}>
+          <div className="card-body text-center p-4">
+            <FaRegClock style={{ fontSize: '27px' }} />
+            <h4 className="mt-3">Ahorro de Tiempo</h4>
+            <p>Genera ensayos en menos tiempo, lo que te permite concentrarte en otras actividades.</p>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
+{/* Sección Generación de Quiz */}
+<section
+  id="generacion-quiz"
+  className="py-5 text-center"
+  style={{
+    padding: '50px 15px',
+    backgroundImage: `url(${nosotrosBg})`,  // Imagen de fondo para la sección
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+  <div className="container" style={{ background: 'rgba(255, 255, 255, 0.85)', padding: '30px', borderRadius: '10px' }}>
+    <motion.h2
+      className="mb-4"
+      style={{ fontSize: '32px', fontWeight: 'bold', color: '#001F3D' }}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <FaClipboardList className="me-2" color="#001F3D" /> Generador de Quiz
+    </motion.h2>
+    <motion.p
+      style={{ fontSize: '18px', maxWidth: '800px', margin: '0 auto', color: '#333' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      En TutorIA, contamos con un generador de quizzes interactivo que te permite crear preguntas de opción múltiple, adaptadas al tema ingresado. Sigue estos pasos para empezar a crear tu propio quiz y poner a prueba tus conocimientos.
+    </motion.p>
+    <div className="row mt-4">
+      {[{
+        title: 'Generación Rápida',
+        icon: <FaPlayCircle color="#ff6f61" />,
+        img: generacionRapidaImg,
+        text: 'Genera un quiz completo en minutos. Solo ingresa el tema y dale en Generar. Nuestro sistema se encarga del resto.'
+      },
+      {
+        title: 'Revisión y Resultados',
+        icon: <FaCheckCircle color="#001F3D" />,
+        img: revisionImg,
+        text: 'Al terminar, puedes revisar las respuestas correctas e incorrectas, y mejorar tu rendimiento.'
+      }].map((item, index) => (
+        <motion.div key={index} className="col-md-6" whileHover={{ scale: 1.05 }}>
+          <div className="card shadow-sm p-3" style={{ border: '2px solid #001F3D', borderRadius: '10px' }}>
+            <h4 className="mb-3" style={{ color: '#001F3D' }}>{item.icon} {item.title}</h4>
+            <p style={{ color: '#333' }}>{item.text}</p>
+            <img src={item.img} alt={item.title} className="img-fluid mt-3" style={{ maxHeight: '150px', objectFit: 'cover', borderRadius: '10px' }} />
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+  {/* Cuadro adicional con detalles */}
+  <div
+    style={{
+      backgroundColor: '#ffffff',
+      padding: '30px',
+      marginTop: '30px',
+      borderRadius: '10px',
+      boxShadow: '0px 10px 15px rgba(0, 0, 0, 0.1)',
+    }}
+  >
+    <h3 className="mb-4" style={{ color: '#001F3D', fontSize: '28px', fontWeight: 'bold' }}>
+      ¿Por qué usar nuestro Generador de Quiz?
+    </h3>
+    <p style={{ fontSize: '18px', color: '#333' }}>
+      Nuestro generador de quizzes te ayuda a mejorar tu aprendizaje de manera eficiente. Ya sea para repasar conceptos clave, prepararte para un examen o simplemente medir tu progreso, esta herramienta es perfecta para cualquier estudiante.
+    </p>
+    <a
+      href="#quiz" // El enlace dirige a la sección de Quiz
+      className="btn btn-primary mt-4"
+      style={{
+        padding: '12px 30px',
+        fontSize: '18px',
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        backgroundColor: '#001F3D',
+        color: 'white',
+      }}
+    >
+      ¡Comienza tu Quiz Ahora!
+    </a>
+  </div>
+</section>
 
       <section 
             id="beneficios" 
@@ -273,9 +700,7 @@ function Dashboard() {
             </div>
             </section>
 
-
-
-            <section 
+<section 
   id="galeria" 
   className="py-5 position-relative"
   style={{ 
@@ -283,7 +708,7 @@ function Dashboard() {
     backgroundSize: 'cover', 
     backgroundPosition: 'center', 
     backgroundRepeat: 'no-repeat', 
-    backdropFilter: 'blur(5px)' // Desenfoque del fondo
+    backdropFilter: 'blur(5px)'
   }}
 >
   <div className="container">
@@ -338,7 +763,6 @@ function Dashboard() {
     </div>
   </div>
 </section>
-
 
 
 {/* Sección Contacto - PowerMove con imagen de fondo */}
@@ -398,7 +822,7 @@ function Dashboard() {
         {/* Formulario */}
         <form className="p-4 border rounded-3 shadow-sm bg-white bg-opacity-75">
           <h5 className="mb-3 text-primary">Déjanos tu mensaje</h5>
-          <p><strong>Email:</strong> contacto@powermove.com</p>
+          <p><strong>Email:</strong> contacto@tutoria.com</p>
           <div className="mb-3">
             <input type="text" className="form-control" placeholder="Nombre" required />
           </div>
@@ -419,9 +843,6 @@ function Dashboard() {
     </div>
   </div>
 </section>
-
-
-
 
       {/* Footer */}
       <footer style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '20px 0', textAlign: 'center' }}>

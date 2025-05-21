@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; 
 import { FaImages, FaPhotoVideo, FaTools, FaBullseye, FaEye, FaHeart, FaUsers } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { FaRegClipboard } from 'react-icons/fa';
@@ -88,10 +89,10 @@ function WelcomePage() {
               </li>
 
               <li className="nav-item">
-                <a href="#nosotros" className="btn" style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none' }}>
-                  Nosotros
-                </a>
-              </li>
+                  <ScrollLink to="nosotros" smooth={true} duration={500} className="btn" style={{ backgroundColor: '#001F3D', color: '#ffffff', padding: '0.35rem 0.75rem', fontSize: '18px', border: 'none', cursor: 'pointer' }}>
+                    Nosotros
+                  </ScrollLink>
+                </li>
             </ul>
           </div>
         </div>
@@ -382,7 +383,7 @@ function WelcomePage() {
         {/* Formulario */}
         <form className="p-4 border rounded-3 shadow-sm bg-white bg-opacity-75">
           <h5 className="mb-3 text-primary">Déjanos tu mensaje</h5>
-          <p><strong>Email:</strong> contacto@powermove.com</p>
+          <p><strong>Email:</strong> contacto@tutoria.com</p>
           <div className="mb-3">
             <input type="text" className="form-control" placeholder="Nombre" required />
           </div>
