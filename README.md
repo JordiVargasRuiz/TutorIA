@@ -15,32 +15,38 @@ Permite a los usuarios organizar sus actividades académicas:
 - Crear, editar y eliminar tareas.
 - Marcar tareas como completadas.
 - Almacenamiento local automático.
+![image](https://github.com/user-attachments/assets/6d7ae012-e32d-467d-85b5-2b06aad2927d)
 
 ### 📝 Generador de Ensayos
 Genera ensayos completos de forma automatizada a partir de un tema:
 - Estructura clara con introducción, desarrollo y conclusión.
 - Resultados personalizables según nivel educativo.
+![image](https://github.com/user-attachments/assets/ee009456-54fe-4a97-9ac1-0da294213eb8)
 
 ### 📚 Biblioteca Virtual
 Consulta libros agregados por los usuarios y organiza tu colección:
 - Búsqueda por título.
 - Visualización y administración intuitiva.
 - Añadir nuevos libros con facilidad.
+![image](https://github.com/user-attachments/assets/f1535902-9f24-4e97-8b1f-dd9728f2b2da)
 
 ### 🧠 Generador de Quizzes
 Crea cuestionarios interactivos a partir de un tema:
 - Preguntas de opción múltiple.
 - Ideal para estudio y autoevaluación.
+![image](https://github.com/user-attachments/assets/03d837a1-72b2-4c6c-8dfb-dbcaf6cb718e)
 
 ### 🧾 Generador de Citas en Formato APA
 Convierte referencias bibliográficas en formato APA en segundos:
 - Compatible con libros, artículos y páginas web.
 - Salida lista para copiar y pegar.
+![image](https://github.com/user-attachments/assets/aac7505c-ffab-4c62-8c2e-b3f68825b7d8)
 
 ### ✂️ Generador de Resúmenes
 Resume automáticamente textos extensos:
 - Extractos concisos y coherentes.
 - Ajuste del nivel de detalle.
+![image](https://github.com/user-attachments/assets/73984225-56d6-41f1-968d-bd3689969edb)
 
 ---
 
