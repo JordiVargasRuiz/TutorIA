@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 🎓 TutorIA – Plataforma de Asistencia Académica Inteligente
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**TutorIA** es una plataforma educativa integral basada en inteligencia artificial, diseñada para potenciar el aprendizaje autónomo, la organización académica y la producción de contenido escolar. Combina herramientas inteligentes con una interfaz amigable, ofreciendo una solución completa para estudiantes y docentes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Funcionalidades destacadas
 
-### `npm start`
+### 🤖 Chatbot Académico
+Asistente virtual con IA capaz de responder preguntas, resolver dudas escolares, ofrecer explicaciones detalladas y asistir en la elaboración de trabajos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✅ Lista de Tareas (To-Do List)
+Permite a los usuarios organizar sus actividades académicas:
+- Crear, editar y eliminar tareas.
+- Marcar tareas como completadas.
+- Almacenamiento local automático.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📝 Generador de Ensayos
+Genera ensayos completos de forma automatizada a partir de un tema:
+- Estructura clara con introducción, desarrollo y conclusión.
+- Resultados personalizables según nivel educativo.
 
-### `npm test`
+### 📚 Biblioteca Virtual
+Consulta libros agregados por los usuarios y organiza tu colección:
+- Búsqueda por título.
+- Visualización y administración intuitiva.
+- Añadir nuevos libros con facilidad.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧠 Generador de Quizzes
+Crea cuestionarios interactivos a partir de un tema:
+- Preguntas de opción múltiple.
+- Ideal para estudio y autoevaluación.
 
-### `npm run build`
+### 🧾 Generador de Citas en Formato APA
+Convierte referencias bibliográficas en formato APA en segundos:
+- Compatible con libros, artículos y páginas web.
+- Salida lista para copiar y pegar.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✂️ Generador de Resúmenes
+Resume automáticamente textos extensos:
+- Extractos concisos y coherentes.
+- Ajuste del nivel de detalle.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧰 Tecnologías utilizadas
 
-### `npm run eject`
+| Tecnología            | Descripción                                      |
+|------------------------|--------------------------------------------------|
+| `React.js`             | Librería principal para la construcción de la interfaz. |
+| `Bootstrap`            | Framework CSS para diseño responsivo y moderno. |
+| `JavaScript`           | Lógica de interacción del lado del cliente.     |
+| `Gemini 2.0 Flash`     | Motor de procesamiento de lenguaje natural.     |
+| `LocalStorage`         | Almacenamiento persistente del navegador.       |
+| `Flask` / `Node.js`    | Backend para manejo de peticiones y conexión a APIs. |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👥 Público objetivo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+TutorIA está dirigido a:
+- Estudiantes de secundaria, bachillerato y nivel universitario.
+- Profesores que desean reforzar el aprendizaje de sus estudiantes.
+- Autodidactas que buscan apoyo estructurado e inteligente.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📦 Instalación local (opcional)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/tuusuario/tutoria.git
+cd tutoria
+npm install   # o pip install -r requirements.txt si usas Flask
+npm start     # o python app.py
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+📌 Estado del Proyecto
+TutorIA se encuentra en constante desarrollo.
+Actualmente se trabaja en mejoras de rendimiento, nuevas funcionalidades educativas y optimización del uso de Gemini 2.0 Flash.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📄 Licencia
+Este proyecto está licenciado bajo la Licencia MIT.
+Puedes usarlo, modificarlo y distribuirlo libremente, siempre y cuando se otorgue el crédito correspondiente.
