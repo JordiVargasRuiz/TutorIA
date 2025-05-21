@@ -63,6 +63,10 @@ Resume automáticamente textos extensos:
 
 ---
 
+LINK DEL VIDEO MOSTRANDO LAS FUNCIONALIDADES
+https://youtu.be/b9d-b8VcpyY
+---
+
 ## 👥 Público objetivo
 
 TutorIA está dirigido a:
