@@ -8,8 +8,7 @@
 
 ### 🤖 Chatbot Académico
 Asistente virtual con IA capaz de responder preguntas, resolver dudas escolares, ofrecer explicaciones detalladas y asistir en la elaboración de trabajos.
-![image](https://github.com/user-attachments/assets/8a7efbb7-5a34-424c-b5d9-64cced1bc2d7)
-
+![image](https://github.com/user-attachments/assets/04047663-6a5f-42b1-82ec-a6871841617a)
 
 ### ✅ Lista de Tareas (To-Do List)
 Permite a los usuarios organizar sus actividades académicas:
