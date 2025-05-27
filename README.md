@@ -76,8 +76,8 @@ TutorIA está dirigido a:
 ```bash
 git clone https://github.com/JordiVargasRuiz/TutorIA.git
 cd tutoria
-npm install   # o pip install -r requirements.txt si usas Flask
-npm start     # o python app.py
+npm install 
+npm start   
 
 
 📌 Estado del Proyecto
